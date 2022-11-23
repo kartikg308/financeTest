@@ -25,31 +25,33 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor: const Color(0xffF3F8FE),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CustomCard(textStyle2, textStyle),
-            TitleLine(textStyle2),
-            const CustomPaymentTile(
-              cost: '\$150',
-              icon: Icon(Icons.arrow_upward),
-              subtitle: 'Sending Payments to Clients',
-              title: 'Sent',
-            ),
-            const CustomPaymentTile(
-              cost: '\$150',
-              icon: Icon(Icons.arrow_downward),
-              subtitle: 'Receiving Salary from Company',
-              title: 'Receive',
-            ),
-            const CustomPaymentTile(
-              cost: '\$400',
-              icon: Icon(Icons.monetization_on_outlined),
-              subtitle: 'Loan for car',
-              title: 'Loan',
-            ),
-          ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomCard(textStyle2, textStyle),
+              TitleLine(textStyle2),
+              const CustomPaymentTile(
+                cost: '\$150',
+                icon: Icon(Icons.arrow_upward),
+                subtitle: 'Sending Payments to Clients',
+                title: 'Sent',
+              ),
+              const CustomPaymentTile(
+                cost: '\$150',
+                icon: Icon(Icons.arrow_downward),
+                subtitle: 'Receiving Salary from Company',
+                title: 'Receive',
+              ),
+              const CustomPaymentTile(
+                cost: '\$400',
+                icon: Icon(Icons.monetization_on_outlined),
+                subtitle: 'Loan for car',
+                title: 'Loan',
+              ),
+            ],
+          ),
         ),
       ),
     );

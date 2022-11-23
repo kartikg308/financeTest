@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Finance',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: const Color(0xffF3F8FE),
       ),
       home: const Login(),
     );
